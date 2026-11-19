@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Cognitive-Proof/c2pa-verifier-leaderboard/main/schema/result.schema.json",
+  "title": "Validator results for one company",
+  "description": "One file per company at results/<company-id>.json. Each entry describes what the company's validator did with one test file.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["company", "date", "results"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "company": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Company name. Must match the name in owners.json."
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Date the results were produced, as YYYY-MM-DD."
+    },
+    "results": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/result" }
+    }
+  },
+  "$defs": {
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file", "c2paValid", "aiStatus", "userMessage", "error", "signals"],
+      "properties": {
+        "file": {
+          "type": "string",
+          "pattern": "^(conformant/\\d+\\.\\d+|experimental)/.+",
+          "description": "Path of the test file relative to testfiles/, e.g. conformant/2.5/photo.jpg."
+        },
+        "c2paValid": {
+          "type": "boolean",
+          "description": "Is this a valid C2PA file according to the validator?"
+        },
+        "aiStatus": {
+          "enum": ["AI", "Edited with AI", "Unknown", "No AI"],
+          "description": "The AI label the validator gave the file."
+        },
+        "userMessage": {
+          "type": "string",
+          "description": "The text that would be shown to a user to describe this file."
+        },
+        "error": {
+          "type": ["string", "null"],
+          "description": "The error text, or null when there is no error."
+        },
+        "signals": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "The signals the validator used to reach its verdict."
+        }
+      }
+    }
+  }
+}

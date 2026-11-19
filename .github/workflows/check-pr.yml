@@ -1,0 +1,44 @@
+name: Check pull request
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      # The rules and owners.json come from the target branch, so a pull request can't change them
+      # to let itself through.
+      - name: Check out target branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+          persist-credentials: false
+
+      # The pull request is only read as data; none of its code runs.
+      - name: Check out pull request
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: pr
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check changed files
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          git -C pr fetch --no-tags origin "$BASE_SHA"
+          git -C pr diff --name-status --no-renames "$BASE_SHA...$HEAD_SHA" \
+            | node base/scripts/check-pr.mjs --author "$AUTHOR" --base base --pr pr

@@ -1,0 +1,9 @@
+{
+  "maintainers": ["mrappard"],
+  "companies": {
+    "example-co": {
+      "name": "Example Co",
+      "github": ["mrappard"]
+    }
+  }
+}
