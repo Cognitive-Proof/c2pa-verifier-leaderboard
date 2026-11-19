@@ -2,5 +2,12 @@
   "maintainers": [
     "mrappard"
   ],
-  "companies": {}
+  "companies": {
+    "plug-fest-bot": {
+      "name": "Plug-Fest Bot",
+      "github": [
+        "mrappard"
+      ]
+    }
+  }
 }
