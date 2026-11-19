@@ -28,13 +28,10 @@ export function listFiles(dir) {
 // Classifies a path relative to testfiles/. Returns null when it is not in an allowed place.
 export function describeTestFile(path) {
   const parts = path.split("/");
-  if (parts[0] === "conformant" && parts.length >= 3 && VERSION_RE.test(parts[1])) {
-    return { path, category: "conformant", version: parts[1], name: parts.slice(2).join("/") };
+  if (!["conformant", "experimental"].includes(parts[0]) || parts.length < 3 || !VERSION_RE.test(parts[1])) {
+    return null;
   }
-  if (parts[0] === "experimental" && parts.length >= 2) {
-    return { path, category: "experimental", version: null, name: parts.slice(1).join("/") };
-  }
-  return null;
+  return { path, category: parts[0], version: parts[1], name: parts.slice(2).join("/") };
 }
 
 const isDate = (s) =>
@@ -73,7 +70,7 @@ export function validateResults(doc, { expectedCompany, knownFiles } = {}) {
     for (const key of allowed) if (!(key in r)) fail(`${at}.${key}`, "is required");
 
     if (typeof r.file !== "string" || !describeTestFile(r.file)) {
-      fail(`${at}.file`, "must be a path under conformant/<version>/ or experimental/");
+      fail(`${at}.file`, "must be a path under conformant/<version>/ or experimental/<version>/");
     } else {
       if (seen.has(r.file)) fail(`${at}.file`, `"${r.file}" is listed more than once`);
       seen.add(r.file);
