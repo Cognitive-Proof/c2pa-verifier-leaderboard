@@ -1,0 +1,816 @@
+{
+  "$schema": "../schema/result.schema.json",
+  "company": "Plug-Fest Bot",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "file": "experimental/2.5/ai/a01_text_to_image.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a02_text_to_image.png",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a03_ai_then_cropped.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content that has been Cropped. AI-generated: opened parent: ingredient 'a01_text_to_image.jpg' -> created as trainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a04_text_to_video.mp4",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a05_text_to_speech.wav",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a06_update_manifest_over_ai.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is a combination of AI-Generated and Empty content. AI-generated: update manifest over ingredient 'untitled ingredient' -> created as trainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_blankCanvas",
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a07_source_type_from_template.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: active manifest failed validation: assertion.action.malformed",
+      "error": "assertion.action.malformed: c2pa.created action must have a digitalSourceType",
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a08_ai_disclosure_fully_autonomous.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a09_ai_disclosure_prompt_guided.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a10_ai_disclosure_human_validated.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a11_empty_with_ai_component.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is a combination of AI-Generated and Empty content that has been Placed. AI-generated: created as empty; component: ingredient 'a01_text_to_image.jpg' -> created as trainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_blankCanvas",
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a12_ai_then_generative_inpaint.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is a combination of AI-Generated and AI-Edited content that has been Edited. AI-generated: opened parent: ingredient 'a01_text_to_image.jpg' -> created as trainedAlgorithmicMedia; c2pa.edited as compositeWithTrainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a13_text_to_image_with_reference_input.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a14_ai_minimal_disclosure.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a15_ai_disclosure_empty_content_profile.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/ai/a16_ai_two_model_disclosures.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i01_generative_fill.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Edited content that has been Edited. Includes AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.edited as compositeWithTrainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i02_ai_element_placed.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Generated content that has been Placed. Includes AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; component: ingredient 'a01_text_to_image.jpg' -> created as trainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i03_created_with_ai_elements.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is AI-Edited content. Includes AI: created as compositeWithTrainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_partlyGenAICreation"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i04_generative_fill_then_cropped.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Edited content that has been Edited and Cropped. Includes AI: opened parent: ingredient 'i01_generative_fill.jpg' -> opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.edited as compositeWithTrainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i05_unsigned_ai_ingredient_declared.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is Digital Capture content that has been Placed. Includes AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; component: ingredient 'dream.jpg' declares trainedAlgorithmicMedia (no manifest)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "inception:signal_capturedMedia",
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i06_ai_parent_with_photo_placed.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of AI-Generated and Digital Capture content that has been Placed. Includes AI: opened parent: ingredient 'a01_text_to_image.jpg' -> created as trainedAlgorithmicMedia; component: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture",
+      "error": null,
+      "signals": [
+        "inception:signal_capturedMedia",
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i07_ai_disclosure_human_validated.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Edited content that has been Edited. Includes AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.edited as compositeWithTrainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i08_composite_synthetic.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is Synthetic Composite content. Includes AI: created as compositeSynthetic",
+      "error": null,
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i09_generative_edit_in_related_action.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is Digital Capture content that has been Edited. Includes AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.edited may add content and has no digitalSourceType; c2pa.edited as compositeWithTrainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i10_ai_origin_incomplete_history.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is AI-Generated content. Includes AI: created as trainedAlgorithmicMedia; history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i11_ai_origin_unknown_component.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is AI-Generated content that has been Placed. Includes AI: opened parent: ingredient 'a01_text_to_image.jpg' -> created as trainedAlgorithmicMedia; component: ingredient 'photo-unsigned.jpg' has no manifest or source type",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i12_empty_with_mixed_components.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of AI-Generated, Digital Capture and Empty content that has been Placed. Includes AI: created as empty; component: ingredient 'a01_text_to_image.jpg' -> created as trainedAlgorithmicMedia; component: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture",
+      "error": null,
+      "signals": [
+        "inception:signal_blankCanvas",
+        "inception:signal_capturedMedia",
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i13_ai_with_hand_drawn_annotation.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of AI-Generated and Human Edits content that has been Drawn On. Includes AI: opened parent: ingredient 'a01_text_to_image.jpg' -> created as trainedAlgorithmicMedia; c2pa.drawing as humanEdits; a later action may have added non-AI content",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleNonGenAI",
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i14_ai_then_composite_synthetic_edit.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of AI-Generated and Synthetic Composite content that has been Edited. Includes AI: opened parent: ingredient 'a01_text_to_image.jpg' -> created as trainedAlgorithmicMedia; c2pa.edited as compositeSynthetic; a later action may have added non-AI content",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i15_mixed_cropped_away_from_ai.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Generated content that has been Placed and Cropped. Includes AI: opened parent: ingredient 'i02_ai_element_placed.jpg' -> opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; component: ingredient 'a01_text_to_image.jpg' -> created as trainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i16_ai_declared_on_placed_action.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Generated content that has been Placed. Includes AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.placed as trainedAlgorithmicMedia; component: ingredient 'dream.jpg' declares trainedAlgorithmicMedia (no manifest)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i17_ai_component_partly_deleted.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Generated content that has been Placed and Deleted. Includes AI: opened parent: ingredient 'i02_ai_element_placed.jpg' -> opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; component: ingredient 'a01_text_to_image.jpg' -> created as trainedAlgorithmicMedia; c2pa.deleted of part of the content",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i18_generative_fill_region.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Edited content that has been Edited. Includes AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.edited as compositeWithTrainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i19_video_with_ai_voice_track.mp4",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Generated content that has been Dubbed. Includes AI: created as digitalCapture; c2pa.dubbed as trainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "inception:signal_capturedMedia",
+        "transformation:signal_perceptibleGenAI"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i20_ai_in_second_actions_assertion.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is Digital Capture content. Includes AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.edited as compositeWithTrainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions",
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i21_capture_generative_upscale.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Edited content that has been Resized. Includes AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.resized as compositeWithTrainedAlgorithmicMedia",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/includes-ai/i22_generative_erase.jpg",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Edited content that has been Deleted. Includes AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.deleted as compositeWithTrainedAlgorithmicMedia (the removed area was filled by a generative model)",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/invalid/x01_disclosure_missing_model_type.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/invalid/x02_disclosure_invalid_oversight_level.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/invalid/x03_disclosure_scalar_scientific_domain.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/invalid/x04_disclosure_empty_scientific_domain.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/invalid/x05_disclosure_content_profile_not_a_map.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/invalid/x06_disclosure_model_name_not_text.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/invalid/x07_disclosure_null_scientific_domain.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/invalid/x08_disclosure_unknown_model_type.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/invalid/x09_disclosure_unknown_arxiv_category.jpg",
+      "c2paValid": true,
+      "aiStatus": "AI",
+      "userMessage": "This is AI-Generated content. AI-generated: created as trainedAlgorithmicMedia; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n01_camera_capture.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Digital Capture content. No AI: created as digitalCapture",
+      "error": null,
+      "signals": [
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n02_capture_cropped_and_adjusted.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is a combination of Digital Capture and Human Edits content that has been Cropped and AdjustedColor. No AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.adjustedColor as humanEdits",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleNonGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n03_digital_illustration.png",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Digital Creation content. No AI: created as digitalCreation",
+      "error": null,
+      "signals": [
+        "inception:signal_nonGenAIDigitalCreation"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n04_hdr_computational_capture.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Computational Capture content. No AI: created as computationalCapture",
+      "error": null,
+      "signals": [
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n05_field_recording.wav",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Digital Capture content. No AI: created as digitalCapture",
+      "error": null,
+      "signals": [
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n06_procedural_fractal.png",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia",
+      "error": null,
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/no-ai/n07_ai_component_deleted.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Generated content that has been Placed and Deleted. No AI: opened parent: ingredient 'i02_ai_element_placed.jpg' -> opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.deleted removes a whole component",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n08_composite_of_captures.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Composite Capture content. No AI: created as compositeCapture",
+      "error": null,
+      "signals": [
+        "inception:signal_capturedMediaStitched"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n09_ai_component_deleted_via_template_parameters.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Generated content that has been Placed and Deleted. No AI: opened parent: ingredient 'i02_ai_element_placed.jpg' -> opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.deleted removes a whole component",
+      "error": null,
+      "signals": [
+        "inception:signal_fullyGenAIMedia",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n10_computational_capture_with_model_disclosure.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Computational Capture content. No AI: created as computationalCapture; c2pa.ai-disclosure present",
+      "error": null,
+      "signals": [
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n11_capture_then_declared_human_edit.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is a combination of Digital Capture and Human Edits content that has been Edited. No AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.edited as humanEdits",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleNonGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n12_ai_placed_on_action_then_deleted.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is a combination of Digital Capture and AI-Generated content that has been Placed and Deleted. No AI: opened parent: ingredient 'i16_ai_declared_on_placed_action.jpg' -> opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.deleted removes a whole component",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/no-ai/n13_capture_enhanced_declared_non_generative.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is a combination of Digital Capture and Human Edits content that has been Enhanced. No AI: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.enhanced as humanEdits",
+      "error": null,
+      "signals": [
+        "transformation:signal_nonEditorial",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u01_no_manifest.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/unknown/u02_ai_with_manifest_stripped.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/unknown/u03_legacy_v1_actions.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content. AI use unknown: created as algorithmicMedia; history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u04_edited_from_unsigned_parent.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been AdjustedColor. AI use unknown: opened parent: ingredient 'photo-unsigned.jpg' has no manifest or source type; c2pa.adjustedColor has no digitalSourceType",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u05_tampered_capture.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Digital Capture content. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u06_remote_manifest_unavailable.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: remote manifest at https://northwindtraders.com/c2pa/manifests/u06-not-published.c2pa couldn't be fetched: server answered 301 Moved Permanently",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/unknown/u08_algorithmically_enhanced.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is a combination of Digital Capture and Algorithmically Enhanced content that has been Edited. AI use unknown: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.edited as algorithmicallyEnhanced",
+      "error": null,
+      "signals": [
+        "transformation:signal_perceptibleNonGenAI",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u09_edited_from_tampered_parent.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Digital Capture content that has been Cropped. AI use unknown: opened parent: ingredient 'u05_tampered_capture.jpg' failed validation: assertion.dataHash.mismatch",
+      "error": null,
+      "signals": [
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u10_incomplete_history_capture.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Digital Capture content. AI use unknown: created as digitalCapture; history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "inception:signal_capturedMedia",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u11_screen_capture.png",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Screen Capture content. AI use unknown: created as screenCapture",
+      "error": null,
+      "signals": [
+        "inception:signal_screenCaptureMayContainGenAI"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u12_virtual_recording.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Virtual Recording content. AI use unknown: created as virtualRecording",
+      "error": null,
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/unknown/u13_empty_with_unknown_component.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Empty content that has been Placed. AI use unknown: created as empty; component: ingredient 'photo-unsigned.jpg' has no manifest or source type",
+      "error": null,
+      "signals": [
+        "inception:signal_blankCanvas",
+        "inception:signal_mediaUnknownProvenance"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u14_capture_with_model_disclosure.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Digital Capture content. AI use unknown: created as digitalCapture; c2pa.ai-disclosure present but no source type declares AI use",
+      "error": null,
+      "signals": [
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u15_capture_then_custom_action.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Digital Capture content that has been Stylize. AI use unknown: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; com.northwindtraders.stylize has unknown effect and no digitalSourceType",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u16_capture_then_unspecified_edit.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Digital Capture content that has been Edited. AI use unknown: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.edited may add content and has no digitalSourceType",
+      "error": null,
+      "signals": [
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u17_ai_ingredient_redacted.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Digital Capture content that has been Placed and Redacted. AI use unknown: opened parent: ingredient 'i02_ai_element_placed.jpg' -> opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; redacts self#jumbf=/c2pa/urn:c2pa:632c7496-4230-4232-8dfb-cae2b61ede9f/c2pa.assertions/c2pa.ingredient.v3__1",
+      "error": null,
+      "signals": [
+        "transformation:signal_nonEditorial",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u18_capture_enhanced_undeclared.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Digital Capture content that has been Enhanced. AI use unknown: opened parent: ingredient 'n01_camera_capture.jpg' -> created as digitalCapture; c2pa.enhanced has no digitalSourceType",
+      "error": null,
+      "signals": [
+        "transformation:signal_nonEditorial",
+        "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/unknown/u19_update_adds_model_disclosure.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is a combination of Digital Capture and Empty content. AI use unknown: update manifest adds c2pa.ai-disclosure over ingredient 'untitled ingredient' -> created as digitalCapture",
+      "error": null,
+      "signals": [
+        "inception:signal_blankCanvas",
+        "inception:signal_capturedMedia"
+      ]
+    }
+  ]
+}

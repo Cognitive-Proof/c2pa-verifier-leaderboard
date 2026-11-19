@@ -3,6 +3,7 @@
 *                          @mrappard
 
 # Each company owns its results file.
+/results/plug-fest-bot.json @mrappard
 
 # Only maintainers decide who owns what.
 /owners.json                @mrappard
