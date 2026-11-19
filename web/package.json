@@ -1,5 +1,5 @@
 {
-  "name": "c2pa-plugfest-results-viewer",
+  "name": "c2pa-validator-test-viewer",
   "private": true,
   "type": "module",
   "scripts": {

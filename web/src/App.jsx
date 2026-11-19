@@ -133,7 +133,7 @@ export default function App() {
   return (
     <main className="page">
       <header>
-        <h1>C2PA Plugfest Results</h1>
+        <h1>C2PA Validator Test</h1>
         <p className="sub">
           {data.testFiles.length} test files · {companies.length} systems · {data.results.length} results ·
           updated {new Date(data.generatedAt).toLocaleString()} · <a href="./combined.json">combined.json</a>

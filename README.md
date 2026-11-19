@@ -1,4 +1,4 @@
-# C2PA Plugfest Results
+# C2PA Validator Test
 
 Shared C2PA test files, and what each company's validator says about them.
 
