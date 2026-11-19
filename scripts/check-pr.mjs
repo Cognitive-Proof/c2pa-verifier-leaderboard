@@ -64,7 +64,9 @@ for (const { status, path } of changes) {
       notes.push(`${path}: removed by a maintainer.`);
       continue;
     }
-    const company = owners.companies?.[id];
+    // A maintainer may add a company to owners.json and its results in the same pull request.
+    const prOwners = isMaintainer && existsSync(join(prDir, "owners.json")) ? readJson(join(prDir, "owners.json")) : null;
+    const company = owners.companies?.[id] ?? prOwners?.companies?.[id];
     if (!company) {
       errors.push(`${path}: "${id}" is not in owners.json. Ask a maintainer to add your company and GitHub login first.`);
       continue;
