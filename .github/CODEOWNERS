@@ -3,7 +3,6 @@
 *                          @mrappard
 
 # Each company owns its results file.
-/results/example-co.json    @mrappard
 
 # Only maintainers decide who owns what.
 /owners.json                @mrappard

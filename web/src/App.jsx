@@ -4,14 +4,18 @@ const AI_STATUSES = ["AI", "Edited with AI", "Unknown", "No AI"];
 const IMAGE_EXT = /\.(jpe?g|png|gif|webp|avif|heic|heif|tiff?|svg)$/i;
 const aiClass = (s) => "pill ai-" + s.toLowerCase().replace(/\s+/g, "-");
 
-// "conformant/2.5" or "experimental": the group a test file is shown under.
-const groupOf = (f) => (f.category === "conformant" ? `conformant/${f.version}` : "experimental");
-const groupLabel = (g) => (g === "experimental" ? "Experimental (non-conformant)" : `Conformant · C2PA ${g.split("/")[1]}`);
+// "conformant/2.5" or "experimental/2.5": the group a test file is shown under.
+// Conformant groups come first, then experimental, each by spec version.
+const groupOf = (f) => `${f.category}/${f.version}`;
+const groupLabel = (g) => {
+  const [category, version] = g.split("/");
+  return category === "experimental" ? `Experimental (non-conformant) · C2PA ${version}` : `Conformant · C2PA ${version}`;
+};
 const compareGroups = (a, b) => {
-  if (a === b) return 0;
-  if (a === "experimental") return 1;
-  if (b === "experimental") return -1;
-  const [x, y] = [a, b].map((g) => g.split("/")[1].split(".").map(Number));
+  const [ca, va] = a.split("/");
+  const [cb, vb] = b.split("/");
+  if (ca !== cb) return ca === "conformant" ? -1 : 1;
+  const [x, y] = [va, vb].map((v) => v.split(".").map(Number));
   return x[0] - y[0] || x[1] - y[1];
 };
 

@@ -4,7 +4,7 @@ Shared C2PA test files, and what each company's validator says about them.
 
 - **`testfiles/conformant/<version>/`**: conformant C2PA files, by spec version (`2.2`, `2.3`, `2.4`, `2.5`, …).
   Subfolders are allowed.
-- **`testfiles/experimental/`**: non-conformant C2PA files.
+- **`testfiles/experimental/<version>/`**: non-conformant C2PA files, by spec version. Subfolders are allowed.
 - **`results/<company-id>.json`**: one file per company with its validator's results for the test files.
   Only that company's listed GitHub accounts can change it.
 - **Viewer**: a React page (`web/`) that compares how every system handles every test file. It's published
@@ -16,7 +16,7 @@ Everything arrives as a pull request.
 
 ### Add test files
 
-Put them in `testfiles/conformant/<version>/` or `testfiles/experimental/` and open a pull request.
+Put them in `testfiles/conformant/<version>/` or `testfiles/experimental/<version>/` and open a pull request.
 Anyone can add test files. Only maintainers can change or remove files that are already there.
 
 ### Add or update your results
@@ -121,4 +121,4 @@ npm run dev     # combines the results, then serves the viewer
 npm run build   # static site in web/dist
 ```
 
-`results/example-co.json` and its three test files are sample data. Delete them once real results arrive.
+`testfiles/experimental/2.5/` holds the generative-AI examples from c2pa-ai-examples, sorted into `ai`, `includes-ai`, `no-ai`, `unknown` and `invalid`.

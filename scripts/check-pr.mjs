@@ -49,7 +49,7 @@ for (const { status, path } of changes) {
       errors.push(`${path}: only maintainers can change or remove a test file that is already in the repository.`);
     } else if (status !== "D" && !describeTestFile(rel)) {
       errors.push(
-        `${path}: put conformant files in testfiles/conformant/<version>/ (for example testfiles/conformant/2.5/) and non-conformant files in testfiles/experimental/.`,
+        `${path}: put conformant files in testfiles/conformant/<version>/ and non-conformant files in testfiles/experimental/<version>/ (for example testfiles/experimental/2.5/).`,
       );
     } else {
       notes.push(`${path}: test file ${status === "A" ? "added" : status === "D" ? "removed" : "changed"}.`);
@@ -60,6 +60,10 @@ for (const { status, path } of changes) {
   const m = /^results\/([^/]+)\.json$/.exec(path);
   if (m) {
     const id = m[1];
+    if (status === "D" && isMaintainer) {
+      notes.push(`${path}: removed by a maintainer.`);
+      continue;
+    }
     const company = owners.companies?.[id];
     if (!company) {
       errors.push(`${path}: "${id}" is not in owners.json. Ask a maintainer to add your company and GitHub login first.`);

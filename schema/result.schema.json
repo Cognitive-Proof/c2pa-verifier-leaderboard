@@ -32,8 +32,8 @@
       "properties": {
         "file": {
           "type": "string",
-          "pattern": "^(conformant/\\d+\\.\\d+|experimental)/.+",
-          "description": "Path of the test file relative to testfiles/, e.g. conformant/2.5/photo.jpg."
+          "pattern": "^(conformant|experimental)/\\d+\\.\\d+/.+",
+          "description": "Path of the test file relative to testfiles/, e.g. experimental/2.5/ai/a01_text_to_image.jpg."
         },
         "c2paValid": {
           "type": "boolean",
