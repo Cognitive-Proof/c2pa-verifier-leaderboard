@@ -53,6 +53,8 @@ export default function App() {
   const [group, setGroup] = useState("all");
   const [show, setShow] = useState("all");
   const [ai, setAi] = useState("all");
+  const [system, setSystem] = useState("all");
+  const [validity, setValidity] = useState("all");
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(() => new Set([readHash()].filter(Boolean)));
   const [collapsed, setCollapsed] = useState(() => new Set());
@@ -85,22 +87,28 @@ export default function App() {
     [rows],
   );
 
+  // With one system picked, only its column shows and the AI label and validity filters ask
+  // about its result; otherwise they match a file if any system's result does.
+  const shownCompanies = system === "all" ? companies : companies.filter((c) => c.id === system);
   const sections = useMemo(() => {
     const q = query.trim().toLowerCase();
     const out = new Map();
     for (const row of rows) {
+      const pool = system === "all" ? Object.values(row.byCompany) : [row.byCompany[system]].filter(Boolean);
       if (group !== "all" && row.group !== group) continue;
       if (q && !row.file.path.toLowerCase().includes(q)) continue;
       if (show === "differ" && !(row.validDiffers || row.aiDiffers)) continue;
       if (show === "validity" && !row.validDiffers) continue;
       if (show === "ai" && !row.aiDiffers) continue;
-      if (show === "missing" && row.missing === 0) continue;
-      if (ai !== "all" && !Object.values(row.byCompany).some((r) => r.aiStatus === ai)) continue;
+      if (show === "missing" && (system === "all" ? row.missing === 0 : row.byCompany[system])) continue;
+      if (ai !== "all" && !pool.some((r) => r.aiStatus === ai)) continue;
+      if (validity !== "all" && !pool.some((r) => r.c2paValid === (validity === "valid"))) continue;
       if (!out.has(row.group)) out.set(row.group, []);
       out.get(row.group).push(row);
     }
     return [...out.entries()].sort(([a], [b]) => compareGroups(a, b));
-  }, [rows, group, show, ai, query]);
+  }, [rows, group, show, ai, validity, system, query]);
+  const whose = system === "all" ? "any system" : shownCompanies[0]?.name;
   const shown = sections.reduce((n, [, list]) => n + list.length, 0);
 
   // A file linked from #file/<path> opens and scrolls into view once the data is loaded.
@@ -157,6 +165,13 @@ export default function App() {
           </select>
         </label>
         <label>
+          System
+          <select value={system} onChange={(e) => setSystem(e.target.value)}>
+            <option value="all">All systems</option>
+            {companies.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
+          </select>
+        </label>
+        <label>
           Show
           <select value={show} onChange={(e) => setShow(e.target.value)}>
             <option value="all">All files</option>
@@ -167,7 +182,15 @@ export default function App() {
           </select>
         </label>
         <label>
-          Any system said
+          Validity ({whose})
+          <select value={validity} onChange={(e) => setValidity(e.target.value)}>
+            <option value="all">Valid or invalid</option>
+            <option value="valid">Valid</option>
+            <option value="invalid">Invalid</option>
+          </select>
+        </label>
+        <label>
+          AI label ({whose})
           <select value={ai} onChange={(e) => setAi(e.target.value)}>
             <option value="all">Any AI label</option>
             {AI_STATUSES.map((s) => <option key={s}>{s}</option>)}
@@ -200,7 +223,7 @@ export default function App() {
                     <tr>
                       <th className="file-col">Test file</th>
                       <th className="agree-col">Agreement</th>
-                      {companies.map((c) => <th key={c.id} className="sys-col">{c.name}</th>)}
+                      {shownCompanies.map((c) => <th key={c.id} className="sys-col">{c.name}</th>)}
                     </tr>
                   </thead>
                   <tbody>
@@ -208,7 +231,7 @@ export default function App() {
                       <FileRows
                         key={row.file.path}
                         row={row}
-                        companies={companies}
+                        companies={shownCompanies}
                         isOpen={open.has(row.file.path)}
                         onToggle={() => toggle(row.file.path)}
                       />
