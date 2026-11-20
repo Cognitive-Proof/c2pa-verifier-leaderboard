@@ -1,8 +1,2274 @@
 {
   "$schema": "../schema/result.schema.json",
   "company": "Plug-Fest Bot",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "results": [
+    {
+      "file": "experimental/1.4/font/ttf/monotype-20240712-monotype_sans.ttf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-A.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-C.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Drawn On. AI use unknown: created with no digitalSourceType; c2pa.drawing may add content and has no digitalSourceType; history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted. AI use unknown: opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CACA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted. AI use unknown: opened parent: ingredient 'CA.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true); c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions",
+        "inception:signal_mediaUnknownProvenance"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CACAICAICICA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted, Placed, Resized and Drawn On. AI use unknown: opened parent: ingredient 'CAICA.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'CA.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true); c2pa.color_adjustments has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'CICA.jpg' -> created with no digitalSourceType; c2pa.drawing may add content and has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'CA.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions",
+        "inception:signal_mediaUnknownProvenance"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CAI.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted, Placed and Resized. AI use unknown: opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'I.jpg' has no manifest or source type; history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CAIAIIICAICIICAIICICA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Drawn On, Color Adjusted, Placed and Resized. AI use unknown: opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'C.jpg' -> created with no digitalSourceType; c2pa.drawing may add content and has no digitalSourceType; history may be incomplete (allActionsIncluded not true); component: ingredient 'I.jpg' has no manifest or source type; component: ingredient 'CA.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true); component: ingredient 'CI.jpg' -> created with no digitalSourceType; c2pa.drawing may add content and has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'I.jpg' has no manifest or source type; history may be incomplete (allActionsIncluded not true); component: ingredient 'CAI.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'I.jpg' has no manifest or source type; history may be incomplete (allActionsIncluded not true); component: ingredient 'CICA.jpg' -> created with no digitalSourceType; c2pa.drawing may add content and has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'CA.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CAICA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted, Placed and Resized. AI use unknown: opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'CA.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CAICAI.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted, Placed and Resized. AI use unknown: opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'CAI.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'I.jpg' has no manifest or source type; history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CI.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Drawn On, Placed and Resized. AI use unknown: created with no digitalSourceType; c2pa.drawing may add content and has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'I.jpg' has no manifest or source type; history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CICA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted, Drawn On, Placed and Resized. AI use unknown: created with no digitalSourceType; c2pa.drawing may add content and has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'CA.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions",
+        "inception:signal_mediaUnknownProvenance"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CICACACA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted, Drawn On, Placed and Resized. AI use unknown: created with no digitalSourceType; c2pa.drawing may add content and has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'CA.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions",
+        "inception:signal_mediaUnknownProvenance"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CIE-sig-CA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted, Drawn On, Placed and Resized. AI use unknown: created with no digitalSourceType; c2pa.drawing may add content and has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'E-sig-CA.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions",
+        "inception:signal_mediaUnknownProvenance"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-CII.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Drawn On, Placed and Resized. AI use unknown: created with no digitalSourceType; c2pa.drawing may add content and has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'I.jpg' has no manifest or source type; history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-E-clm-CAICAI.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted, Placed and Resized. AI use unknown: active manifest failed validation: ingredient.manifest.missing, assertion.hashedURI.mismatch",
+      "error": "ingredient.manifest.missing: ingredient manifest missing; assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.ingredient__1",
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-E-dat-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-E-sig-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-E-uri-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions",
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-E-uri-CIE-sig-CA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted, Drawn On, Placed and Resized. AI use unknown: created with no digitalSourceType; c2pa.drawing may add content and has no digitalSourceType; c2pa.resized has no digitalSourceType; component: ingredient 'E-sig-CA.jpg' -> opened parent: ingredient 'A.jpg' has no manifest or source type; c2pa.color_adjustments has no digitalSourceType; history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions",
+        "inception:signal_mediaUnknownProvenance"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-I.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-XCA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Color Adjusted. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/adobe-20220124-XCI.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This content has been Drawn On, Placed and Resized. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/nikon-20221019-building.jpeg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: active manifest failed validation: signingCredential.expired",
+      "error": "signingCredential.expired: certificate expired",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/truepic-20230212-camera.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: data hash exclusion does not match the manifest location in the asset",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/truepic-20230212-landscape.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: data hash exclusion does not match the manifest location in the asset",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/image/jpeg/truepic-20230212-library.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: data hash exclusion does not match the manifest location in the asset",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/1.4/pdf/adobe-20240110-single_manifest_store.pdf",
+      "c2paValid": true,
+      "aiStatus": "Edited with AI",
+      "userMessage": "This is AI-Generated content that has been Edited. Includes AI: c2pa.edited as trainedAlgorithmicMedia; no created or opened action; component: ingredient 'Imported Ingredient' -> created as trainedAlgorithmicMedia; history may be incomplete (allActionsIncluded not true); component: ingredient 'Imported Ingredient' -> created as trainedAlgorithmicMedia; history may be incomplete (allActionsIncluded not true); history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions",
+        "transformation:signal_perceptibleGenAI",
+        "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/1.4/video/mp4/truepic-20230212-zoetrope.mp4",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no created or opened action; history may be incomplete (allActionsIncluded not true)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/alac/cogproof-20261029-E-dat-CA.m4a",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.bmffHash.mismatch",
+      "error": "assertion.bmffHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( BMFF file level hash mismatch )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/alac/cogproof-20261029-E-sig-CA.m4a",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/alac/cogproof-20261029-E-uri-CA.m4a",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/bwf/cogproof-20261029-E-dat-CA.wav",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/bwf/cogproof-20261029-E-sig-CA.wav",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/bwf/cogproof-20261029-E-uri-CA.wav",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/flac/cogproof-20261029-E-dat-CA.flac",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/flac/cogproof-20261029-E-sig-CA.flac",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/flac/cogproof-20261029-E-uri-CA.flac",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/m4a/cogproof-20261029-E-dat-CA.m4a",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.bmffHash.mismatch",
+      "error": "assertion.bmffHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( BMFF file level hash mismatch )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/m4a/cogproof-20261029-E-sig-CA.m4a",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/m4a/cogproof-20261029-E-uri-CA.m4a",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/mp3/cogproof-20261029-E-dat-CA.mp3",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/mp3/cogproof-20261029-E-sig-CA.mp3",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/mp3/cogproof-20261029-E-uri-CA.mp3",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/wav/cogproof-20261029-E-dat-CA.wav",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/wav/cogproof-20261029-E-sig-CA.wav",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/bad/wav/cogproof-20261029-E-uri-CA.wav",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/alac/cogproof-20261029-C.m4a",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/alac/cogproof-20261029-CA.m4a",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.m4a' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/alac/cogproof-20261029-CAI.m4a",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.m4a' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.m4a' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/bwf/cogproof-20261029-C.wav",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/bwf/cogproof-20261029-CA.wav",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.wav' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/bwf/cogproof-20261029-CAI.wav",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.wav' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.wav' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/flac/cogproof-20261029-C.flac",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/flac/cogproof-20261029-CA.flac",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.flac' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/flac/cogproof-20261029-CAI.flac",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.flac' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.flac' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/m4a/cogproof-20261029-C.m4a",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/m4a/cogproof-20261029-CA.m4a",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.m4a' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/m4a/cogproof-20261029-CAI.m4a",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.m4a' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.m4a' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/mp3/cogproof-20261029-C.mp3",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/mp3/cogproof-20261029-CA.mp3",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.mp3' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/mp3/cogproof-20261029-CAI.mp3",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.mp3' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.mp3' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/wav/cogproof-20261029-C.wav",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/wav/cogproof-20261029-CA.wav",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.wav' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/audio/good/wav/cogproof-20261029-CAI.wav",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.wav' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.wav' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/docx/cogproof-20261029-E-dat-CA.docx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.collectionHash.mismatch",
+      "error": "assertion.collectionHash.mismatch: collection hash error: assertion.collectionHash.mismatch",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/docx/cogproof-20261029-E-sig-CA.docx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/docx/cogproof-20261029-E-uri-CA.docx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/epub/cogproof-20261029-E-dat-CA.epub",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.collectionHash.mismatch",
+      "error": "assertion.collectionHash.mismatch: collection hash error: assertion.collectionHash.mismatch",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/epub/cogproof-20261029-E-sig-CA.epub",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/epub/cogproof-20261029-E-uri-CA.epub",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/odg/cogproof-20261029-E-dat-CA.odg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.collectionHash.mismatch",
+      "error": "assertion.collectionHash.mismatch: collection hash error: assertion.collectionHash.mismatch",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/odg/cogproof-20261029-E-sig-CA.odg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/odg/cogproof-20261029-E-uri-CA.odg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/odp/cogproof-20261029-E-dat-CA.odp",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.collectionHash.mismatch",
+      "error": "assertion.collectionHash.mismatch: collection hash error: assertion.collectionHash.mismatch",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/odp/cogproof-20261029-E-sig-CA.odp",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/odp/cogproof-20261029-E-uri-CA.odp",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/ods/cogproof-20261029-E-dat-CA.ods",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.collectionHash.mismatch",
+      "error": "assertion.collectionHash.mismatch: collection hash error: assertion.collectionHash.mismatch",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/ods/cogproof-20261029-E-sig-CA.ods",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/ods/cogproof-20261029-E-uri-CA.ods",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/odt/cogproof-20261029-E-dat-CA.odt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.collectionHash.mismatch",
+      "error": "assertion.collectionHash.mismatch: collection hash error: assertion.collectionHash.mismatch",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/odt/cogproof-20261029-E-sig-CA.odt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/odt/cogproof-20261029-E-uri-CA.odt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/oxps/cogproof-20261029-E-dat-CA.oxps",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.collectionHash.mismatch",
+      "error": "assertion.collectionHash.mismatch: collection hash error: assertion.collectionHash.mismatch",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/oxps/cogproof-20261029-E-sig-CA.oxps",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/oxps/cogproof-20261029-E-uri-CA.oxps",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/pptx/cogproof-20261029-E-dat-CA.pptx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.collectionHash.mismatch",
+      "error": "assertion.collectionHash.mismatch: collection hash error: assertion.collectionHash.mismatch",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/pptx/cogproof-20261029-E-sig-CA.pptx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/pptx/cogproof-20261029-E-uri-CA.pptx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/xlsx/cogproof-20261029-E-dat-CA.xlsx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.collectionHash.mismatch",
+      "error": "assertion.collectionHash.mismatch: collection hash error: assertion.collectionHash.mismatch",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/xlsx/cogproof-20261029-E-sig-CA.xlsx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/bad/xlsx/cogproof-20261029-E-uri-CA.xlsx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/docx/cogproof-20261029-C.docx",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/docx/cogproof-20261029-CA.docx",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.docx' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/docx/cogproof-20261029-CAI.docx",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.docx' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.docx' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/epub/cogproof-20261029-C.epub",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/epub/cogproof-20261029-CA.epub",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.epub' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/epub/cogproof-20261029-CAI.epub",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.epub' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.epub' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/odg/cogproof-20261029-C.odg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/odg/cogproof-20261029-CA.odg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.odg' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/odg/cogproof-20261029-CAI.odg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.odg' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.odg' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/odp/cogproof-20261029-C.odp",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/odp/cogproof-20261029-CA.odp",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.odp' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/odp/cogproof-20261029-CAI.odp",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.odp' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.odp' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/ods/cogproof-20261029-C.ods",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/ods/cogproof-20261029-CA.ods",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.ods' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/ods/cogproof-20261029-CAI.ods",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.ods' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.ods' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/odt/cogproof-20261029-C.odt",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/odt/cogproof-20261029-CA.odt",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.odt' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/odt/cogproof-20261029-CAI.odt",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.odt' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.odt' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/oxps/cogproof-20261029-C.oxps",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/oxps/cogproof-20261029-CA.oxps",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.oxps' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/oxps/cogproof-20261029-CAI.oxps",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.oxps' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.oxps' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/pptx/cogproof-20261029-C.pptx",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/pptx/cogproof-20261029-CA.pptx",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.pptx' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/pptx/cogproof-20261029-CAI.pptx",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.pptx' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.pptx' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/xlsx/cogproof-20261029-C.xlsx",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/xlsx/cogproof-20261029-CA.xlsx",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.xlsx' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/document/good/xlsx/cogproof-20261029-CAI.xlsx",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.xlsx' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.xlsx' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/font/bad/otf/cogproof-20261029-E-dat-CA.otf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/font/bad/otf/cogproof-20261029-E-sig-CA.otf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/font/bad/otf/cogproof-20261029-E-uri-CA.otf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/font/bad/ttf/cogproof-20261029-E-dat-CA.ttf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/font/bad/ttf/cogproof-20261029-E-sig-CA.ttf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/font/bad/ttf/cogproof-20261029-E-uri-CA.ttf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/font/good/otf/cogproof-20261029-C.otf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/font/good/otf/cogproof-20261029-CA.otf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/font/good/otf/cogproof-20261029-CAI.otf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/font/good/ttf/cogproof-20261029-C.ttf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/font/good/ttf/cogproof-20261029-CA.ttf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/font/good/ttf/cogproof-20261029-CAI.ttf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/html/bad/html/cogproof-20261029-E-dat-CA.html",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/html/bad/html/cogproof-20261029-E-sig-CA.html",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/html/bad/html/cogproof-20261029-E-uri-CA.html",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/html/good/html/cogproof-20261029-C.html",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/html/good/html/cogproof-20261029-CA.html",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/html/good/html/cogproof-20261029-CAI.html",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/image/bad/avif/cogproof-20261029-E-dat-CA.avif",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.bmffHash.mismatch",
+      "error": "assertion.bmffHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( BMFF file level hash mismatch )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/avif/cogproof-20261029-E-sig-CA.avif",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/avif/cogproof-20261029-E-uri-CA.avif",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/dng/cogproof-20261029-E-dat-CA.dng",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/dng/cogproof-20261029-E-sig-CA.dng",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/dng/cogproof-20261029-E-uri-CA.dng",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/gif/cogproof-20261029-E-dat-CA.gif",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/gif/cogproof-20261029-E-sig-CA.gif",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/gif/cogproof-20261029-E-uri-CA.gif",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/heic/cogproof-20261029-E-dat-CA.heic",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.bmffHash.mismatch",
+      "error": "assertion.bmffHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( BMFF file level hash mismatch )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/heic/cogproof-20261029-E-sig-CA.heic",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/heic/cogproof-20261029-E-uri-CA.heic",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/jpeg/cogproof-20261029-E-dat-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/jpeg/cogproof-20261029-E-sig-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/jpeg/cogproof-20261029-E-uri-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/jxl/cogproof-20261029-E-dat-CA.jxl",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/jxl/cogproof-20261029-E-sig-CA.jxl",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/jxl/cogproof-20261029-E-uri-CA.jxl",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/png/cogproof-20261029-E-dat-CA.png",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/png/cogproof-20261029-E-sig-CA.png",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/png/cogproof-20261029-E-uri-CA.png",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/svg/cogproof-20261029-E-dat-CA.svg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/svg/cogproof-20261029-E-sig-CA.svg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/svg/cogproof-20261029-E-uri-CA.svg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/tiff/cogproof-20261029-E-dat-CA.tif",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/tiff/cogproof-20261029-E-sig-CA.tif",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/tiff/cogproof-20261029-E-uri-CA.tif",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/webp/cogproof-20261029-E-dat-CA.webp",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch, assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: data hash exclusion does not match the manifest location in the asset; assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/webp/cogproof-20261029-E-sig-CA.webp",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/bad/webp/cogproof-20261029-E-uri-CA.webp",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/avif/cogproof-20261029-C.avif",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/avif/cogproof-20261029-CA.avif",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.avif' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/avif/cogproof-20261029-CAI.avif",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.avif' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.avif' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/dng/cogproof-20261029-C.dng",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/dng/cogproof-20261029-CA.dng",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.dng' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/dng/cogproof-20261029-CAI.dng",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.dng' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.dng' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/gif/cogproof-20261029-C.gif",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/gif/cogproof-20261029-CA.gif",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.gif' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/gif/cogproof-20261029-CAI.gif",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.gif' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.gif' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/heic/cogproof-20261029-C.heic",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/heic/cogproof-20261029-CA.heic",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.heic' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/heic/cogproof-20261029-CAI.heic",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.heic' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.heic' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/jpeg/cogproof-20261029-C.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/jpeg/cogproof-20261029-CA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.jpg' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/jpeg/cogproof-20261029-CAI.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.jpg' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.jpg' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/jxl/cogproof-20261029-C.jxl",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/jxl/cogproof-20261029-CA.jxl",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.jxl' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/jxl/cogproof-20261029-CAI.jxl",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.jxl' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.jxl' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/png/cogproof-20261029-C.png",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/png/cogproof-20261029-CA.png",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.png' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/png/cogproof-20261029-CAI.png",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.png' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.png' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/svg/cogproof-20261029-C.svg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/svg/cogproof-20261029-CA.svg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.svg' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/svg/cogproof-20261029-CAI.svg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.svg' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.svg' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/tiff/cogproof-20261029-C.tif",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/tiff/cogproof-20261029-CA.tif",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.tif' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/tiff/cogproof-20261029-CAI.tif",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.tif' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.tif' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/webp/cogproof-20261029-C.webp",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/webp/cogproof-20261029-CA.webp",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.webp' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/image/good/webp/cogproof-20261029-CAI.webp",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.webp' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.webp' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/pdf/bad/pdf/cogproof-20261029-E-dat-CA.pdf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/pdf/bad/pdf/cogproof-20261029-E-sig-CA.pdf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/pdf/bad/pdf/cogproof-20261029-E-uri-CA.pdf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/pdf/good/pdf/cogproof-20261029-C.pdf",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/pdf/good/pdf/cogproof-20261029-CA.pdf",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.pdf' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/pdf/good/pdf/cogproof-20261029-CAI.pdf",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.pdf' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.pdf' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/text/bad/md/cogproof-20261029-E-dat-CA.md",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/text/bad/md/cogproof-20261029-E-sig-CA.md",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/text/bad/md/cogproof-20261029-E-uri-CA.md",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/text/good/md/cogproof-20261029-C.md",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/text/good/md/cogproof-20261029-CA.md",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/text/good/md/cogproof-20261029-CAI.md",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.4/video/bad/avi/cogproof-20261029-E-dat-CA.avi",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch, assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: data hash exclusion does not match the manifest location in the asset; assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/bad/avi/cogproof-20261029-E-sig-CA.avi",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/bad/avi/cogproof-20261029-E-uri-CA.avi",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/bad/mov/cogproof-20261029-E-dat-CA.mov",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.bmffHash.mismatch",
+      "error": "assertion.bmffHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( BMFF file level hash mismatch )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/bad/mov/cogproof-20261029-E-sig-CA.mov",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/bad/mov/cogproof-20261029-E-uri-CA.mov",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/bad/mp4/cogproof-20261029-E-dat-CA.mp4",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.bmffHash.mismatch",
+      "error": "assertion.bmffHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( BMFF file level hash mismatch )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/bad/mp4/cogproof-20261029-E-sig-CA.mp4",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/bad/mp4/cogproof-20261029-E-uri-CA.mp4",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/good/avi/cogproof-20261029-C.avi",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/good/avi/cogproof-20261029-CA.avi",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.avi' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/good/avi/cogproof-20261029-CAI.avi",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.avi' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.avi' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/good/mov/cogproof-20261029-C.mov",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/good/mov/cogproof-20261029-CA.mov",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.mov' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/good/mov/cogproof-20261029-CAI.mov",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.mov' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.mov' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/good/mp4/cogproof-20261029-C.mp4",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/good/mp4/cogproof-20261029-CA.mp4",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.mp4' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.4/video/good/mp4/cogproof-20261029-CAI.mp4",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.mp4' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.mp4' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
     {
       "file": "experimental/2.5/ai/a01_text_to_image.jpg",
       "c2paValid": true,
@@ -164,6 +2430,416 @@
       "error": null,
       "signals": [
         "inception:signal_fullyGenAIMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/archive/bad/warc/cogproof-20261029-E-dat-CA.warc",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/archive/bad/warc/cogproof-20261029-E-sig-CA.warc",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/archive/bad/warc/cogproof-20261029-E-uri-CA.warc",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/archive/good/warc/cogproof-20261029-C.warc",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/archive/good/warc/cogproof-20261029-CA.warc",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/archive/good/warc/cogproof-20261029-CAI.warc",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/bad/facta/cogproof-20261029-E-dat-CA.facta",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/bad/facta/cogproof-20261029-E-sig-CA.facta",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/bad/facta/cogproof-20261029-E-uri-CA.facta",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/bad/midi/cogproof-20261029-E-dat-CA.mid",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/bad/midi/cogproof-20261029-E-sig-CA.mid",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/bad/midi/cogproof-20261029-E-uri-CA.mid",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/bad/ogg/cogproof-20261029-E-dat-CA.ogg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/bad/ogg/cogproof-20261029-E-sig-CA.ogg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/bad/ogg/cogproof-20261029-E-uri-CA.ogg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/good/facta/cogproof-20261029-C.facta",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/good/facta/cogproof-20261029-CA.facta",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/good/facta/cogproof-20261029-CAI.facta",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/good/midi/cogproof-20261029-C.mid",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/good/midi/cogproof-20261029-CA.mid",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/good/midi/cogproof-20261029-CAI.mid",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/good/ogg/cogproof-20261029-C.ogg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/good/ogg/cogproof-20261029-CA.ogg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/audio/good/ogg/cogproof-20261029-CAI.ogg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/data/bad/parquet/cogproof-20261029-E-dat-CA.parquet",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/data/bad/parquet/cogproof-20261029-E-sig-CA.parquet",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/data/bad/parquet/cogproof-20261029-E-uri-CA.parquet",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/data/good/parquet/cogproof-20261029-C.parquet",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/data/good/parquet/cogproof-20261029-CA.parquet",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/data/good/parquet/cogproof-20261029-CAI.parquet",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/image/bad/facti/cogproof-20261029-E-dat-CA.facti",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/image/bad/facti/cogproof-20261029-E-sig-CA.facti",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/image/bad/facti/cogproof-20261029-E-uri-CA.facti",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/image/bad/jpeg-exif/cogproof-20261029-E-dat-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/image/bad/jpeg-exif/cogproof-20261029-E-sig-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/image/bad/jpeg-exif/cogproof-20261029-E-uri-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/image/bad/jpeg-mpf/cogproof-20261029-E-dat-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/image/bad/jpeg-mpf/cogproof-20261029-E-sig-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/image/bad/jpeg-mpf/cogproof-20261029-E-uri-CA.jpg",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/image/good/facti/cogproof-20261029-C.facti",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/image/good/facti/cogproof-20261029-CA.facti",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/image/good/facti/cogproof-20261029-CAI.facti",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/image/good/jpeg-exif/cogproof-20261029-C.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/image/good/jpeg-exif/cogproof-20261029-CA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.jpg' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/image/good/jpeg-exif/cogproof-20261029-CAI.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.jpg' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.jpg' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/image/good/jpeg-mpf/cogproof-20261029-C.jpg",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/image/good/jpeg-mpf/cogproof-20261029-CA.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.jpg' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/image/good/jpeg-mpf/cogproof-20261029-CAI.jpg",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.jpg' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.jpg' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
       ]
     },
     {
@@ -499,6 +3175,102 @@
       ]
     },
     {
+      "file": "experimental/2.5/model/bad/onnx/cogproof-20261029-E-dat-CA.onnx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/model/bad/onnx/cogproof-20261029-E-sig-CA.onnx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/model/bad/onnx/cogproof-20261029-E-uri-CA.onnx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/model/bad/safetensors/cogproof-20261029-E-dat-CA.safetensors",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/model/bad/safetensors/cogproof-20261029-E-sig-CA.safetensors",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/model/bad/safetensors/cogproof-20261029-E-uri-CA.safetensors",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/model/good/onnx/cogproof-20261029-C.onnx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/model/good/onnx/cogproof-20261029-CA.onnx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/model/good/onnx/cogproof-20261029-CAI.onnx",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/model/good/safetensors/cogproof-20261029-C.safetensors",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/model/good/safetensors/cogproof-20261029-CA.safetensors",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/model/good/safetensors/cogproof-20261029-CAI.safetensors",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
       "file": "experimental/2.5/no-ai/n01_camera_capture.jpg",
       "c2paValid": true,
       "aiStatus": "No AI",
@@ -632,6 +3404,224 @@
         "transformation:signal_nonEditorial",
         "inception:signal_capturedMedia"
       ]
+    },
+    {
+      "file": "experimental/2.5/pdf/bad/pdf/cogproof-20261029-E-dat-CA.pdf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/pdf/bad/pdf/cogproof-20261029-E-sig-CA.pdf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/pdf/bad/pdf/cogproof-20261029-E-uri-CA.pdf",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/pdf/good/pdf/cogproof-20261029-C.pdf",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/pdf/good/pdf/cogproof-20261029-CA.pdf",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.pdf' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/pdf/good/pdf/cogproof-20261029-CAI.pdf",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.pdf' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.pdf' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/text/bad/ttml/cogproof-20261029-E-dat-CA.ttml",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/text/bad/ttml/cogproof-20261029-E-sig-CA.ttml",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/text/bad/ttml/cogproof-20261029-E-uri-CA.ttml",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/text/bad/txt/cogproof-20261029-E-dat-CA.txt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/text/bad/txt/cogproof-20261029-E-sig-CA.txt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/text/bad/txt/cogproof-20261029-E-uri-CA.txt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/text/bad/vtt/cogproof-20261029-E-dat-CA.vtt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/text/bad/vtt/cogproof-20261029-E-sig-CA.vtt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/text/bad/vtt/cogproof-20261029-E-uri-CA.vtt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/text/good/ttml/cogproof-20261029-C.ttml",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/text/good/ttml/cogproof-20261029-CA.ttml",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.ttml' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/text/good/ttml/cogproof-20261029-CAI.ttml",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.ttml' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.ttml' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/text/good/txt/cogproof-20261029-C.txt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/text/good/txt/cogproof-20261029-CA.txt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/text/good/txt/cogproof-20261029-CAI.txt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/text/good/vtt/cogproof-20261029-C.vtt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/text/good/vtt/cogproof-20261029-CA.vtt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
+    },
+    {
+      "file": "experimental/2.5/text/good/vtt/cogproof-20261029-CAI.vtt",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "AI use unknown: no readable C2PA manifest",
+      "error": "no readable C2PA manifest",
+      "signals": []
     },
     {
       "file": "experimental/2.5/unknown/u01_no_manifest.jpg",
@@ -810,6 +3800,67 @@
       "signals": [
         "inception:signal_blankCanvas",
         "inception:signal_capturedMedia"
+      ]
+    },
+    {
+      "file": "experimental/2.5/video/bad/factv/cogproof-20261029-E-dat-CA.factv",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.dataHash.mismatch, assertion.dataHash.mismatch",
+      "error": "assertion.dataHash.mismatch: data hash exclusion does not match the manifest location in the asset; assertion.dataHash.mismatch: asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/video/bad/factv/cogproof-20261029-E-sig-CA.factv",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: claimSignature.mismatch",
+      "error": "claimSignature.mismatch: claim signature is not valid",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/video/bad/factv/cogproof-20261029-E-uri-CA.factv",
+      "c2paValid": false,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: active manifest failed validation: assertion.hashedURI.mismatch",
+      "error": "assertion.hashedURI.mismatch: hash does not match assertion data: self#jumbf=c2pa.assertions/c2pa.actions.v2",
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/video/good/factv/cogproof-20261029-C.factv",
+      "c2paValid": true,
+      "aiStatus": "No AI",
+      "userMessage": "This is Algorithmic Media content. No AI: created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/video/good/factv/cogproof-20261029-CA.factv",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.factv' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "transformation:signal_ambiguousActions"
+      ]
+    },
+    {
+      "file": "experimental/2.5/video/good/factv/cogproof-20261029-CAI.factv",
+      "c2paValid": true,
+      "aiStatus": "Unknown",
+      "userMessage": "This is Algorithmic Media content that has been Edited and Placed. AI use unknown: opened parent: ingredient 'cogproof-20261029-C.factv' -> created as algorithmicMedia; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version); c2pa.edited may add content and has no digitalSourceType; component: ingredient 'component.factv' has no manifest or source type; allActionsIncluded omitted where it was optional (before spec 2.5; declares no spec version)",
+      "error": null,
+      "signals": [
+        "inception:signal_mediaUnknownProvenance",
+        "transformation:signal_ambiguousActions"
       ]
     }
   ]
