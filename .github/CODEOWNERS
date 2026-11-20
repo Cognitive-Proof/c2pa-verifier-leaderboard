@@ -4,6 +4,7 @@
 
 # Each company owns its results file.
 /results/plug-fest-bot.json @mrappard
+/results/sightengine.json   @mrappard
 
 # Only maintainers decide who owns what.
 /owners.json                @mrappard
