@@ -136,3 +136,14 @@ A file goes in `conformant/` only when c2pa-rs, using just the official
 [C2PA trust lists](https://github.com/c2pa-org/conformance-public/tree/main/trust-list), reports it as
 `Trusted`: signed by a certificate on the list, with no validation failures. Anything else goes in
 `experimental/`.
+
+## Where the results come from
+
+- **Plug-Fest Bot** (`results/plug-fest-bot.json`): the deployed bot's public API (c2pa-rs `4973da7`), run
+  with plug-fest-bot's `scripts/validator-results.mjs`.
+- **Sightengine** (`results/sightengine.json`): not submitted by Sightengine. We ran each test file through
+  its public, in-browser checker at <https://sightengine.com/c2pa-check> (c2pa-web 0.11.0) on 2026-11-20
+  with a headless browser and recorded what the page showed. Its headline maps to `aiStatus` (AI-generated
+  → AI, camera capture → No AI, anything else → Unknown). `c2paValid` is false when the page reports a
+  failed validation, no credential, an unsupported format or an engine error; an untrusted signer alone
+  doesn't count.
