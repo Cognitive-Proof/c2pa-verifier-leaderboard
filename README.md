@@ -122,3 +122,17 @@ npm run build   # static site in web/dist
 ```
 
 `testfiles/experimental/2.5/` holds the generative-AI examples from c2pa-ai-examples, sorted into `ai`, `includes-ai`, `no-ai`, `unknown` and `invalid`.
+
+## Test file sources
+
+- **`experimental/1.4`, `experimental/2.4`, and the format folders in `experimental/2.5`** (`archive`,
+  `audio`, `data`, `image`, `model`, `pdf`, `text`, `video`): from
+  [c2pa-org/public-testfiles](https://github.com/c2pa-org/public-testfiles), `main` plus pull requests
+  #35–#38, under [CC BY-SA 4.0](LICENSE-public-testfiles). `legacy/1.4` there is `1.4` here.
+- **`experimental/2.5/{ai,includes-ai,no-ai,unknown,invalid}`**: the generative-AI examples from
+  c2pa-ai-examples.
+
+A file goes in `conformant/` only when c2pa-rs, using just the official
+[C2PA trust lists](https://github.com/c2pa-org/conformance-public/tree/main/trust-list), reports it as
+`Trusted`: signed by a certificate on the list, with no validation failures. Anything else goes in
+`experimental/`.
